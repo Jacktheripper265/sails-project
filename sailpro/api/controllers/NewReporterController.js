@@ -57,7 +57,7 @@ module.exports = {
             })
             if(user[0].role=='admin')
             {
-                res.send({msg:"admin login successfull",token:token})
+                res.send({msg:"admin login successfull",token:token,role:user[0].role})
 
             }
             else{
@@ -65,7 +65,7 @@ module.exports = {
                 if(user[0].permission===true)
                 {
                     console.log(user[0].permission);
-                    res.send({msg:'reporter login successful',token:token});
+                    res.send({msg:'reporter login successful',token:token,role:user[0].role});
     
                 }
                 else{
