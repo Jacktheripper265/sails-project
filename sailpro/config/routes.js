@@ -22,7 +22,9 @@ module.exports.routes = {
 
   '/': { view: 'pages/homepage' },
   'POST /addUser':{action:'NewReporter/createReporter'},
-  'POST /findUser':{action:'NewReporter/findUser'}
+  'POST /findUser':{action:'NewReporter/findUser'},
+  'GET /getUser':{action:'NewReporter/getUser'},
+  'POST /setPermission':{action:'NewReporter/setPermission'},
 
 
   /***************************************************************************
